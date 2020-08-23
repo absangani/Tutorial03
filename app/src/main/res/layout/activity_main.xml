@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -14,19 +14,32 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/login"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primary_text"
+            android:textSize="30sp" />
+
+
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/filledUserName"
+            android:id="@+id/filledUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/label_username"
             android:orientation="horizontal"
             app:hintTextColor="@color/secondary_text"
+            android:fontFamily="sans-serif-condensed-medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtUserName"
+                android:id="@+id/txtUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -43,12 +56,13 @@
             android:orientation="horizontal"
             app:endIconMode="password_toggle"
             app:hintTextColor="@color/secondary_text"
+            android:fontFamily="sans-serif-condensed-medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/filledUserName">
+            app:layout_constraintTop_toBottomOf="@+id/filledUsername">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtPassWord"
+                android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -60,25 +74,26 @@
             android:id="@+id/btnLogin"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_margin="24dp"
             android:text="@string/login"
-            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:textColor="@color/secondary_text"
-            android:layout_margin="24dp"/>
+            android:textSize="20sp" />
 
 
-<!--            <com.google.android.material.button.MaterialButton-->
-<!--                android:id="@+id/btnLogin"-->
-<!--                android:layout_width="150dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_margin="24dp"-->
-<!--                android:text="@string/login"-->
-<!--                android:textColor="@color/secondary_text"-->
-<!--                android:textSize="24sp"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="parent">-->
+        <!--            <com.google.android.material.button.MaterialButton-->
+        <!--                android:id="@+id/btnLogin"-->
+        <!--                android:layout_width="150dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="24dp"-->
+        <!--                android:text="@string/login"-->
+        <!--                android:textColor="@color/secondary_text"-->
+        <!--                android:textSize="24sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="parent">-->
 
-<!--            </com.google.android.material.button.MaterialButton>-->
+        <!--            </com.google.android.material.button.MaterialButton>-->
     </LinearLayout>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

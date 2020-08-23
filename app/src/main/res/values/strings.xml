@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Tutorial03</string>
     <string name="activity">login page</string>
     <string name="label_username">Username</string>
 
     <string name="label_password">Password</string>
     <string name="login">Login</string>
+    <string name="login_page">Login Page</string>
+    <string name="welcome_user">"Welcome to RKU "</string>
 </resources>
